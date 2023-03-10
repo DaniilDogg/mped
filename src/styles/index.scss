@@ -1,0 +1,22 @@
+@import "variables";
+@import './resetter.scss';
+
+:root {
+  --text-primary: #{$fontSize};
+  --code-size: 16px;
+}
+
+html{
+  font-size: var(--text-primary);
+}
+
+@media (max-width: 350px) {
+  :root{
+    --text-primary: 16px;
+  }
+}
+
+code{
+  font-size: var(--code-size);
+}
+
