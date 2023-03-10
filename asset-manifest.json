@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/mped/static/css/main.4b28ce83.css",
+    "main.js": "/mped/static/js/main.0e4fc2fb.js",
+    "index.html": "/mped/index.html",
+    "main.4b28ce83.css.map": "/mped/static/css/main.4b28ce83.css.map",
+    "main.0e4fc2fb.js.map": "/mped/static/js/main.0e4fc2fb.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4b28ce83.css",
+    "static/js/main.0e4fc2fb.js"
+  ]
+}
