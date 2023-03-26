@@ -1,22 +1,25 @@
 @import "variables";
 @import './resetter.scss';
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
 :root {
   --text-primary: #{$fontSize};
   --code-size: 16px;
 }
 
-html{
+html {
   font-size: var(--text-primary);
+  font-family: 'Roboto', sans-serif;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
 }
 
-@media (max-width: 350px) {
-  :root{
+@media (max-width: 353px) {
+  :root {
     --text-primary: 16px;
   }
 }
 
-code{
+code {
   font-size: var(--code-size);
 }
-

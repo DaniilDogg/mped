@@ -1,0 +1,75 @@
+@import 'styles/resetters.scss';
+
+.showCodeBtn {
+  @include reset-button;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.15rem;
+  font-weight: bold;
+}
+
+.showCodeBtn:hover {
+  cursor: pointer;
+}
+
+.showCodeBtn:hover .text {
+  text-decoration: underline;
+}
+
+.showCodeBtn:disabled {
+  color: inherit;
+}
+
+.showCodeBtn:disabled:hover {
+  cursor: initial;
+}
+
+.showCodeBtn:disabled:hover .text {
+  text-decoration: none;
+}
+
+
+.iconContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@keyframes toHide {
+  from {
+    transform: rotate(0.25turn);
+  }
+
+  to {
+    transform: rotate(0turn);
+  }
+}
+
+@keyframes toShow {
+  from {
+    transform: rotate(0turn);
+  }
+
+  to {
+    transform: rotate(0.25turn);
+  }
+}
+
+.enterActive {
+  rotate: 0turn
+}
+
+.enterDone {
+  transition: rotate 50ms ease-in;
+  rotate: 0.25turn;
+}
+
+.exitActive {
+  rotate: 0.25turn
+}
+
+.exitDone {
+  transition: rotate 50ms ease-in;
+  rotate: 0turn;
+}

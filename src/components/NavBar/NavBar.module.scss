@@ -1,4 +1,4 @@
-.navBar{
+.navBar {
   position: sticky;
   top: 0;
   left: 0;
@@ -10,40 +10,38 @@
 }
 
 @media (max-width: 965px) {
-  .navBar{
+  .navBar {
     display: none;
   }
 }
 
-.navList{
+.navList {
   display: flex;
   flex-direction: column;
   list-style: none;
   padding: 1rem;
 }
 
-.navItem{
+.navItem {
   padding-block: 0.35rem;
-  border-radius: 3px;
+  border-radius: 10px;
 }
-// .navItem:hover{
-//   background: rgba(64,87,109,.07);
-// }
 
-.notActive{
+.notActive {
   background: transparent;
 }
 
-.active{
-  background: rgba(64,87,109,.07);
+.active {
+  background: rgba(64, 87, 109, .07);
 }
 
-.navLink{
+.navLink {
   margin-left: 0.4rem;
   text-decoration: none;
-  font-size: 1.15rem;
+  font-size: 1.1rem;
   color: black;
 }
-.navLink:hover{
+
+.navLink:hover {
   text-decoration: underline;
 }

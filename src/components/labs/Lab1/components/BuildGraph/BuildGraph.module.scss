@@ -1,0 +1,92 @@
+@import 'styles/resetters.scss';
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: fit-content;
+}
+
+.header {
+  font-weight: bold;
+  margin-top: 0.3rem;
+  margin-bottom: 1rem;
+  font-size: 1.15rem;
+}
+
+.inputGroup {
+  display: grid;
+  grid-template-columns: max-content max-content;
+  grid-gap: 5px;
+  align-items: center;
+}
+
+.label {
+  text-align: right;
+}
+
+.label:after {
+  content: ":";
+}
+
+.graphWrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin-block: 1rem;
+}
+
+.graphWrapper div div canvas {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.btn {
+  @include reset-button;
+  height: 2.5rem;
+  width: 12rem;
+  margin: 0;
+  margin-top: 1rem;
+  align-items: center;
+  background-color: initial;
+  background-image: linear-gradient(#464d55, #25292e);
+  border-radius: 8px;
+  border-width: 0;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, .1), 0 3px 6px rgba(0, 0, 0, .05);
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 1;
+  outline: none;
+  overflow: hidden;
+  padding: 0 32px;
+  text-align: center;
+  text-decoration: none;
+  transform: translate3d(0, 0, 0);
+  transition: all 150ms;
+  vertical-align: baseline;
+  white-space: nowrap;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.btn:hover {
+  box-shadow: rgba(0, 1, 0, 0.2) 0 2px 8px;
+  opacity: .95;
+}
+
+.btn:active {
+  outline: 0;
+  box-shadow: rgba(0, 0, 0, .5) 0 0 0 3px;
+}

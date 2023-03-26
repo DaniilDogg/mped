@@ -9,10 +9,14 @@ export default function NavBar() {
       <ul className={styles.navList}>
         {labs.map((lab) => {
           const pathname = `/lab${lab.id}`;
-          const isCurrent = location.pathname === pathname;
+          const isCurrent =
+            location.pathname === pathname ||
+            (location.pathname === "/" && lab.id === 1);
           return (
             <li
-            className={`${styles.navItem} ${isCurrent ? styles.active : styles.notActive}`}
+              className={`${styles.navItem} ${
+                isCurrent ? styles.active : styles.notActive
+              }`}
               key={lab.id}
             >
               <Link className={styles.navLink} to={pathname}>

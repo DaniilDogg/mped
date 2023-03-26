@@ -1,11 +1,13 @@
 .container{
-  display: flex;
-  justify-content: center;
+  display: flex;  
 }
+
 .content{
   display: flex;
   padding-inline: 10%;
   min-width: 0;
+  width: 100%;
+  justify-content: center;
 }
 
 @media (max-width: 1429px) {
