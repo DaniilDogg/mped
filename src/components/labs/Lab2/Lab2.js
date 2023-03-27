@@ -1,7 +1,7 @@
 import { MathComponent } from "mathjax-react";
 
 import ShowCode from "../components/ShowCode";
-import BuildGraph from "./components/BuildGraph";
+import CriticalSignificance from "./components/CriticalSignificance";
 
 import styles from "styles/Lab.module.scss";
 const labId = 2;
@@ -56,6 +56,8 @@ export default function Lab2() {
           </span>
           . Для забезпечення цього застосувати метод половинного поділу.
         </p>
+        <CriticalSignificance />
+        <ShowCode id={labId} />
       </div>
     </div>
   );

@@ -20,7 +20,7 @@ const build = (t0, tk, dt) => {
   const data = { X: [], Y: [] };
   for (let t = t0; t < tk; t += dt) {
     let x = Number(Number.parseFloat(t).toFixed(3));
-    let y = x > 3.5 ? 0.5 : Number(Number.parseFloat(erf(x)).toFixed(3));
+    let y = x > 3.6 ? 0.5 : Number(Number.parseFloat(erf(x)).toFixed(3));
     data.X.push(x);
     data.Y.push(y);
   }
@@ -58,22 +58,31 @@ export default function BuildGraph() {
       <div className={styles.container}>
         <p className={styles.header}>Побудова графіку функції</p>
         <div ref={gotoRef} className={styles.inputGroup}>
-          <span className={styles.label}>Початкове значення</span>
+          <label className={styles.label} htmlFor="t0">
+            Початкове значення
+          </label>
           <CustomInput
             inputRef={ref_t0}
             placeholder={INI.t0}
+            id="t0"
             regExpPattern={INPUT_PATTERN}
           />
-          <span className={styles.label}>Кінцеве значення</span>
+          <label className={styles.label} htmlFor="tk">
+            Кінцеве значення
+          </label>
           <CustomInput
             inputRef={ref_tk}
             placeholder={INI.tk}
+            id="tk"
             regExpPattern={INPUT_PATTERN}
           />
-          <span className={styles.label}>Крок зміни значення</span>
+          <label className={styles.label} htmlFor="dt">
+            Крок зміни значення
+          </label>
           <CustomInput
             inputRef={ref_dt}
             placeholder={INI.dt}
+            id="dt"
             regExpPattern={INPUT_PATTERN}
           />
         </div>
